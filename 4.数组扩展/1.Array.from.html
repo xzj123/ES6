@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+    <p>1</p>
+</body>
+<script>
+    //Array.from 将类数组转化为数组
+    function foo() {
+        console.log(arguments);
+        let arr = Array.from(arguments);
+        console.log(arr);
+    }
+    foo(1,2,3,4);
+/*---------------------------------------------*/
+    let nodeList = document.querySelectorAll('p');
+        console.log(nodeList);
+    let arr=Array.from(nodeList);
+        console.log(arr);
+</script>
+</html>

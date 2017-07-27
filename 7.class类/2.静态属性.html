@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    class Person {
+         constructor(name,age,job){
+            this.name=name;
+            this.age=age;
+            this.job=job;
+        }
+        show(){
+            alert(`我的名字:${this.name},年龄:${this.age},工作:${this.job}`);
+        }
+    }
+    let p1=new Person('zhangsan',19,'搬砖');
+        p1.show();
+    let p2=new Person('lisi',18,'搬砖');
+        p2.show();
+</script>
+</html>

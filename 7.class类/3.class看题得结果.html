@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    class Fu{
+        constructor(){
+            this.num=10;
+            console.log("fu");
+
+        }
+        num(){
+            return  10
+        }
+    }
+    class Zi extends Fu{
+        constructor(){
+
+            super();
+            this.num=20;
+            console.log("zi")
+        }
+        show(){
+            let num=30;
+            console.log(num);
+            console.log(this.num);
+            console.log(super.num());//相当于Fu.prototype.num
+        }
+    }
+    let z=new Zi();
+        z.show();
+</script>
+</html>

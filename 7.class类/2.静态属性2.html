@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script type="module">
+    class Person {
+        static job="搬砖";//需要转码
+        constructor(name,age){
+            this.name=name;
+            this.age=age;
+        }
+        show(){
+            alert(`我的名字:${this.name},年龄:${this.age},工作:${Person.job}`);
+        }
+    }
+    let p1=new Person('张三',19);
+        p1.show();
+    let p2=new Person('李四',18);
+        p2.show();
+
+</script>
+</html>

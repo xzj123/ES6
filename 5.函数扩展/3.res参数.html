@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    /*rest 参数用于获取函数的多余参数，这样就不需要使用arguments对象了*/
+    /*rest 参数中的变量代表一个数组，所以数组特有的方法都可以用于这个变量*/
+    function add(...values) {
+        let sum = 0;
+
+        for (var val of values) {
+            sum += val;
+        }
+        return sum;
+    }
+    add(2, 5, 3) // 10
+</script>
+</html>

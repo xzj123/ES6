@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    class A{
+       constructor(){
+           console.log("a");
+       }
+    }
+    class B extends A{
+        constructor(){
+            super();//它表示调用父类的构造函数 而且必须调用
+                    // 因为子类没有this对象  是继承父类的this对象
+                    //如果不调用super方法 子类就得不到this对象
+            console.log("b");
+        }
+    }
+    class C extends B{
+        constructor(){
+            super();
+        }
+    }
+    let c=new C();
+</script>
+</html>

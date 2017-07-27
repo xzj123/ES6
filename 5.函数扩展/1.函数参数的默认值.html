@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    function log(x, y) {
+        y = y || 'World';
+        console.log(x, y);
+    }
+    log('Hello'); // Hello World
+    log('Hello', 'China');// Hello China
+    log('Hello', '');// Hello
+/*------------Es6之前不能使用默认值--------------*/
+    function log(x, y = 'World') {
+        console.log(x, y);
+    }
+    log('Hello');// Hello World
+    log('Hello', 'China');// Hello China
+    log('Hello', '') // Hello
+
+</script>
+</html>
